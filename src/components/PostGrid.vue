@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-md-6 col-md-offset-3">
-      <label>activity feed (demo)</label>
+      <label>activity feed</label>
     </div>
     <app-post v-for="(post, index) in posts" :key="post" @click.native="deletePost(index)">
       <p v-html="post">{{ post }}</p>
