@@ -1,4 +1,4 @@
-# helioracle command-box prototype
+# helioracle command-box
 
 ## Project setup
 ```
