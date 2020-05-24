@@ -44,6 +44,8 @@ export default {
 
 .btn-own {
   margin-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: #009688;
   border: none;
   border: 1px solid #009688;
