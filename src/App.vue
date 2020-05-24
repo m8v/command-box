@@ -28,7 +28,6 @@ export default {
   methods: {
     newPost(post) {
       const arr = post.split(" ");
-      // arr.map(function(el) {
       for (let i = 0; i < arr.length; i++) {
         let el = arr[i];
         if (el.length === 1) {
@@ -40,7 +39,6 @@ export default {
         } else if (el[0] === "/") {
           arr[i] = `<span class="deadline">${el}</span>`;
         }
-        // console.log(arr[i]);
       }
       post = arr.join(" ");
       this.posts.push(post);
