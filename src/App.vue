@@ -1,7 +1,10 @@
 <template>
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-4 text-center">helioracle command-box</h1>
+      <h1 class="display-4 text-center">
+        helioracle
+        <br />command-box
+      </h1>
       <div class="text-center">
         <i>Hint:</i> try using
         <span class="filter">#filters</span>,
@@ -31,7 +34,7 @@ export default {
       for (let i = 0; i < arr.length; i++) {
         let el = arr[i];
         if (el.length === 1) {
-          return;
+          continue;
         } else if (el[0] === "@") {
           arr[i] = `<span class="nametag">${el}</span>`;
         } else if (el[0] === "#") {
